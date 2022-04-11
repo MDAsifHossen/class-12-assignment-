@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.full-website{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    background-color: #000;
+}
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul{
+    text-align: center;
+}
+
+/* drop-dpwn-menu */
+
+nav ul li ul li a{
+    display: block;
+    padding: 15px 0;
+    margin: 0;
+    
+}
+
+nav ul li ul li{
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li ul{
+    position: absolute;
+    width: 77px;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(1);
+    transform-origin: top center;
+}
+
+/* hover */
+
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li ul li:hover{
+    background-color: #3A70DB;
+    transition: .5s;
+}
+
+/* inner-dropdown-menu */
+
+
+nav ul li ul li ul{
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 100%;
+    width: 150px;
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+}
+
+nav ul li ul li:hover> ul{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+.benner{
+    text-align: center;
+    background-image: url(./img/young-mens.jpg);
+    background-size: cover;
+}
+.benner h1{
+    font-size: 50px;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 200px;
+    padding: 10px 20px;
+}
+.benner h2{
+    font-size: 30px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 20px 30px;
+}
+.benner a{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: red;
+    border: 1px solid red;
+    margin-bottom: 200px;
+    text-decoration: none;
+    color: #fff;
+}
+.benner a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
+
+}
+.out-side-list{
+    list-style-position: outside;
+    text-align: center;
+    border: 1px solid rgb(184, 184, 184);
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding-bottom: 40px;
+}
+.out-side-list h3{
+    font-size: 30px;
+    text-transform: lowercase;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.out-side-list li{
+    margin-bottom: 10px;
+}
+.inside-list{
+    list-style-position: inside;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 0 15px rgb(228, 228, 228);
+}
+.inside-list h3{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.inside-list li{
+    margin-bottom: 30px;
+}
+.form-div{
+    background-color: #F2F2F2;
+    padding: 40px 0;
+    margin-top: 30px;
+    text-align: center;
+}
+.text-form{
+    width: 500px;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid rgb(243, 85, 85);
+}
+
+.form-div button{
+    padding: 10px 15px;
+    border: 2px solid red;
+    box-sizing: border-box; 
+    margin-left: -5px;
+    background-color: red;
+    color: #fff;
+    transition: .5s;
+}
+.form-div button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.list-style-type{
+    padding: 40px;
+    margin-top: 30px;
+    text-align: center;
+    border: 2px dotted #ddd;
+}
+.list-style-type p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.first-style{
+    display: inline-block;
+    list-style: upper-roman;
+}
+.list-style-type ul{
+    margin: 0 100px;
+    display: inline-block;
+}
+.secont-style{
+    display: inline-block;
+    list-style: lower-greek;
+}
+footer{
+    background-color: #000;
+    text-align: center;
+    padding-bottom: 25px;
+}
+footer p{
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer ul li{
+    display: inline-block;
+    background-color: #5EA5FA;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+footer ul{
+    list-style: none;
+}
+
+footer ul li:hover{
+    background-color: rgba(243, 243, 62, 0.822);
+    transition: .5s;
+}
